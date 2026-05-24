@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Los Menos Buscados</title>
+
+    <link rel="stylesheet" href="styless/styles.css">
+
+</head>
+
+<body>
+
+
+
+
+
+    <!-- LOGIN Y REGISTRO -->
+
+    <div class="login-contenedor">
+
+        <h1 class="titulo2">INICIAR SESIÓN</h1>
+
+        <input type="text"
+        id="loginUsuario"
+        placeholder="Usuario">
+
+        <input type="password"
+        id="loginPassword"
+        placeholder="Contraseña">
+
+        <button class="btn"
+        onclick="iniciarSesion()">
+        Ingresar
+        </button>
+
+
+
+
+
+        <h1 class="titulo2">REGISTRO</h1>
+
+        <input type="email"
+        id="registroCorreo"
+        placeholder="Correo">
+
+        <input type="text"
+        id="registroUsuario"
+        placeholder="Usuario">
+
+        <input type="password"
+        id="registroPassword"
+        placeholder="Contraseña">
+
+        <button class="btn"
+        onclick="registrarse()">
+        Registrarse
+        </button>
+
+    </div>
+
+
+
+
+
+    <!-- CONTENIDO PRINCIPAL -->
+
+    <div id="contenidoPrincipal"
+    style="display:none;">
+
+
+
+        <header>
+
+            <h1 class="titulo2">
+                CARTELES DE SE BUSCA
+            </h1>
+
+        </header>
+
+
+
+
+
+        <!-- FILA 1 -->
+        <div class="hola">
+
+            <img src="imagenes/1.jpg"
+            onclick="abrirVentana('ventana1')">
+
+            <img src="imagenes/2.jpg"
+            onclick="abrirVentana('ventana2')">
+
+            <img src="imagenes/3.jpg"
+            onclick="abrirVentana('ventana3')">
+
+            <img src="imagenes/4.jpg"
+            onclick="abrirVentana('ventana4')">
+
+        </div>
+
+
+
+
+
+        <!-- FILA 2 -->
+        <div class="hola">
+
+            <img src="imagenes/7.png"
+            onclick="abrirVentana('ventana5')">
+
+            <img src="imagenes/8.png"
+            onclick="abrirVentana('ventana6')">
+
+            <img src="imagenes/5.jpg"
+            onclick="abrirVentana('ventana7')">
+
+            <img src="imagenes/6.jpg"
+            onclick="abrirVentana('ventana8')">
+
+        </div>
+
+
+
+
+
+        <!-- VENTANA 1 -->
+
+        <div id="ventana1" class="ventana">
+
+            <div class="contenido">
+
+                <span class="cerrar"
+                onclick="cerrarVentana('ventana1')">
+                &times;
+                </span>
+
+                <div class="info">
+
+                    <img src="imagenes/1.jpg">
+
+                    <div class="texto">
+
+                        <h1>ARON ROA</h1>
+
+                        <p class="descripcion">
+
+                            peligroso Inalador de azucar y azucar morena a este peligroso criminalse le a visto
+                contrabandeando yogu yogus afuera de un instituto con altos niveles de azucar se recompensara con 3 yogu yogus 
+                al que pueda capturarlo
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+
+
+        <!-- VENTANA 2 -->
+
+        <div id="ventana2" class="ventana">
+
+            <div class="contenido">
+
+                <span class="cerrar"
+                onclick="cerrarVentana('ventana2')">
+                &times;
+                </span>
+
+                <div class="info">
+
+                    <img src="imagenes/2.jpg">
+
+                    <div class="texto">
+
+                        <h1>esteban Ibañez</h1>
+
+                        <p class="descripcion">
+
+                            peligroso ludopata de zapatos este criminal pasa todo el dia apostando zapatos y acumulando deudas
+            aquel que logre capturarlo recibira todas las deudas que a acumulado con los años pedimos su cooperacion
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+
+
+        <!-- VENTANA 3 -->
+
+        <div id="ventana3" class="ventana">
+
+            <div class="contenido">
+
+                <span class="cerrar"
+                onclick="cerrarVentana('ventana3')">
+                &times;
+                </span>
+
+                <div class="info">
+
+                    <img src="imagenes/3.jpg">
+
+                    <div class="texto">
+
+                        <h1>benjamin fuentes</h1>
+
+                        <p class="descripcion">
+
+                            los policias que vinieron de intercambio desde EEUU Nos han informado de
+                este "carterista" que a estado robando una gran cantidad de celulares al que logre capturarlo se le entregara 
+                los celulares que alla robado
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- VENTANA 4 -->
+
+<div id="ventana4" class="ventana">
+
+    <div class="contenido">
+
+        <span class="cerrar"
+        onclick="cerrarVentana('ventana4')">
+        &times;
+        </span>
+
+        <div class="info">
+
+            <img src="imagenes/4.jpg">
+
+            <div class="texto">
+
+                <h1>Miguel escobar</h1>
+
+                <p class="descripcion">
+
+                    este peligroso traficante de helados el cual a intentado 
+            venderle helado en estado puro a niños del la zona central de chile se el considera 
+            unos de los peores criminales del estado al que logre capturarlo se le recompensara
+            con 2 uvas y 1 mandarina que estaba en mi refrigerador
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+
+
+
+<!-- VENTANA 5 -->
+
+<div id="ventana5" class="ventana">
+
+    <div class="contenido">
+
+        <span class="cerrar"
+        onclick="cerrarVentana('ventana5')">
+        &times;
+        </span>
+
+        <div class="info">
+
+            <img src="imagenes/7.png">
+
+            <div class="texto">
+
+                <h1>hector campos</h1>
+
+                <p class="descripcion">
+
+                    este criminal, acosador, machista, gunter y regetonero se le a visto decirle chancha a cada mujer que 
+                este ve ya tiene varias ordenes de restriccion por eso la recompensa por capturarlo es una chancha
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+
+
+
+<!-- VENTANA 6 -->
+
+<div id="ventana6" class="ventana">
+
+    <div class="contenido">
+
+        <span class="cerrar"
+        onclick="cerrarVentana('ventana6')">
+        &times;
+        </span>
+
+        <div class="info">
+
+            <img src="imagenes/8.png">
+
+            <div class="texto">
+
+                <h1>Víctor Vásquez</h1>
+
+                <p class="descripcion">
+
+                   este peligroso criminal es el lider espiritual del ku klux klan y ademas un profesor en un instituto
+                 el cual a llevado hasta la desesperacion mas grandes a sus alumnos con preguntas tan difisiles que ni siquiera el propio
+                Albert Einstein podria responder la recompensa por capturarlo es pasar el curso
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+
+
+
+<!-- VENTANA 7 -->
+
+<div id="ventana7" class="ventana">
+
+    <div class="contenido">
+
+        <span class="cerrar"
+        onclick="cerrarVentana('ventana7')">
+        &times;
+        </span>
+
+        <div class="info">
+
+            <img src="imagenes/5.jpg">
+
+            <div class="texto">
+
+                <h1>nicolas maduro</h1>
+
+                <p class="descripcion">
+
+                    este criminal llamado nicolas maduro es el presidente mas corrupto 
+            de la historia de venezuela el cual posee la habilidad de multiplicar los penes ya fue capturado por las fuerzas especiales
+            de EEUU actualmente se encuentra en una prision de maxima seguridad la recompensa por capturarlo fue venezuela
+        
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+
+
+
+<!-- VENTANA 8 -->
+
+<div id="ventana8" class="ventana">
+
+    <div class="contenido">
+
+        <span class="cerrar"
+        onclick="cerrarVentana('ventana8')">
+        &times;
+        </span>
+
+        <div class="info">
+
+            <img src="imagenes/6.jpg">
+
+            <div class="texto">
+
+                <h1>chuck norris</h1>
+
+                <p class="descripcion">
+
+                    no se quien a ya sido el estupido que aya puesto a chuck norris en esta lista
+            pero lo unico que puedo decir es que pobre del pendejo que intente ir a capturarlo la recompensa por esa 
+            ofensa es la posinilidade de no morir asi sin mas ahora repasemos algunas hasañas de nuestra deidad chuck norris
+            En una ocasión, la muerte tuvo una experiencia cercana a Chuck Norris, Chuck Norris se pasó todos los Metal Slug con una sola moneda de 1 centavo,
+            Las lágrimas de Chuck Norris curan el cáncer. El problema es que él nunca llora, Chuck Norris ha contado hasta el número infinito. Dos veces
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+
+    </div>
+
+
+
+
+
+    <!-- JAVASCRIPT -->
+
+    <script>
+
+    function registrarse() {
+
+        let correo =
+        document.getElementById("registroCorreo").value;
+
+        let usuario =
+        document.getElementById("registroUsuario").value;
+
+        let password =
+        document.getElementById("registroPassword").value;
+
+
+
+        localStorage.setItem("correo", correo);
+
+        localStorage.setItem("usuario", usuario);
+
+        localStorage.setItem("password", password);
+
+
+
+        alert("Usuario registrado");
+    }
+
+
+
+
+
+    function iniciarSesion() {
+
+        let usuario =
+        document.getElementById("loginUsuario").value;
+
+        let password =
+        document.getElementById("loginPassword").value;
+
+
+
+        let usuarioGuardado =
+        localStorage.getItem("usuario");
+
+        let passwordGuardada =
+        localStorage.getItem("password");
+
+
+
+        if (usuario == usuarioGuardado &&
+            password == passwordGuardada) {
+
+            alert("Inicio de sesión correcto");
+
+            document.getElementById(
+            "contenidoPrincipal")
+            .style.display = "block";
+
+
+
+            document.querySelector(
+            ".login-contenedor")
+            .style.display = "none";
+
+        }
+
+        else {
+
+            alert(
+            "Usuario o contraseña incorrectos");
+        }
+    }
+
+
+
+
+
+    function abrirVentana(id) {
+
+        document.getElementById(id)
+        .style.display = "block";
+    }
+
+
+
+
+
+    function cerrarVentana(id) {
+
+        document.getElementById(id)
+        .style.display = "none";
+    }
+
+    </script>
+
+</body>
+
+</html>
