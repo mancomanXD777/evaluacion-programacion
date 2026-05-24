@@ -1,27 +1,12 @@
 <!DOCTYPE html>
-
 <html lang="es">
-
 <head>
-
     <meta charset="UTF-8">
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>Los Menos Buscados</title>
-
     <link rel="stylesheet" href="styless/styles.css">
-
 </head>
-
 <body>
-
-
-
-
-
-    <!-- LOGIN Y REGISTRO -->
-
     <div class="login-contenedor">
 
         <h1 class="titulo2">INICIAR SESIÓN</h1>
@@ -38,10 +23,6 @@
         onclick="iniciarSesion()">
         Ingresar
         </button>
-
-
-
-
 
         <h1 class="titulo2">REGISTRO</h1>
 
@@ -64,16 +45,8 @@
 
     </div>
 
-
-
-
-
-    <!-- CONTENIDO PRINCIPAL -->
-
     <div id="contenidoPrincipal"
     style="display:none;">
-
-
 
         <header>
 
@@ -83,11 +56,6 @@
 
         </header>
 
-
-
-
-
-        <!-- FILA 1 -->
         <div class="hola">
 
             <img src="imagenes/1.jpg"
@@ -104,11 +72,6 @@
 
         </div>
 
-
-
-
-
-        <!-- FILA 2 -->
         <div class="hola">
 
             <img src="imagenes/7.png"
@@ -124,12 +87,6 @@
             onclick="abrirVentana('ventana8')">
 
         </div>
-
-
-
-
-
-        <!-- VENTANA 1 -->
 
         <div id="ventana1" class="ventana">
 
@@ -164,12 +121,6 @@
 
         </div>
 
-
-
-
-
-        <!-- VENTANA 2 -->
-
         <div id="ventana2" class="ventana">
 
             <div class="contenido">
@@ -201,12 +152,6 @@
             </div>
 
         </div>
-
-
-
-
-
-        <!-- VENTANA 3 -->
 
         <div id="ventana3" class="ventana">
 
@@ -241,8 +186,6 @@
 
         </div>
 
-        <!-- VENTANA 4 -->
-
 <div id="ventana4" class="ventana">
 
     <div class="contenido">
@@ -276,12 +219,6 @@
 
 </div>
 
-
-
-
-
-<!-- VENTANA 5 -->
-
 <div id="ventana5" class="ventana">
 
     <div class="contenido">
@@ -313,12 +250,6 @@
     </div>
 
 </div>
-
-
-
-
-
-<!-- VENTANA 6 -->
 
 <div id="ventana6" class="ventana">
 
@@ -353,12 +284,6 @@
 
 </div>
 
-
-
-
-
-<!-- VENTANA 7 -->
-
 <div id="ventana7" class="ventana">
 
     <div class="contenido">
@@ -392,12 +317,6 @@
     </div>
 
 </div>
-
-
-
-
-
-<!-- VENTANA 8 -->
 
 <div id="ventana8" class="ventana">
 
@@ -434,15 +353,7 @@
 
 </div>
 
-
-
     </div>
-
-
-
-
-
-    <!-- JAVASCRIPT -->
 
     <script>
 
@@ -457,22 +368,14 @@
         let password =
         document.getElementById("registroPassword").value;
 
-
-
         localStorage.setItem("correo", correo);
 
         localStorage.setItem("usuario", usuario);
 
         localStorage.setItem("password", password);
 
-
-
         alert("Usuario registrado");
     }
-
-
-
-
 
     function iniciarSesion() {
 
@@ -482,15 +385,11 @@
         let password =
         document.getElementById("loginPassword").value;
 
-
-
         let usuarioGuardado =
         localStorage.getItem("usuario");
 
         let passwordGuardada =
         localStorage.getItem("password");
-
-
 
         if (usuario == usuarioGuardado &&
             password == passwordGuardada) {
@@ -515,20 +414,11 @@
             "Usuario o contraseña incorrectos");
         }
     }
-
-
-
-
-
     function abrirVentana(id) {
 
         document.getElementById(id)
         .style.display = "block";
     }
-
-
-
-
 
     function cerrarVentana(id) {
 
